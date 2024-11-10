@@ -12,7 +12,11 @@ import java.util.Set;
 @Component
 public class CommandLineBean {
 
-    // ApplicationArguments를 스프링이 자동으로 빈으로 등록한다. 꺼내서 사용하면 된다.
+    /*
+     ApplicationArguments :
+     커맨드 라인 옵션 인수(--key=value 형식), 프로그램 인수(단순 문자열, 논옵션.) 보관.
+     스프링이 자동으로 빈으로 등록한다. 꺼내서 사용하면 된다.
+     */
     private final ApplicationArguments arguments;
 
     public CommandLineBean(ApplicationArguments arguments) {
